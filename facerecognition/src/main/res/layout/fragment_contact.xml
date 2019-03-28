@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/background_blue">
+    <!---->
+
+    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:visibility="gone"
+        android:id="@+id/contactBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        android:text="Important Contacts of Department"/>
+
+    <TextView
+        android:id="@+id/adminContact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="140dp"
+        android:fontFamily="casual"
+        android:text="Mahmudul Hasan \nContact Number: 01673836406\nmhprince1933@gmail.com"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        android:visibility="visible"
+        android:textColor="@color/colorWhite"/>
+
+</FrameLayout>

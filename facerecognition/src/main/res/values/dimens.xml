@@ -1,0 +1,68 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <string name="app_name">JUms</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_remove_teacher">ActivityRemoveTeacher</string>
+
+
+    <string name="BLANK"></string>
+    <string name="STrain">Train</string>
+    <string name="SViewAll">View all faces</string>
+    <string name="SSearch">Search</string>
+    <string name="SDelete">Delete</string>
+    <string name="SEnter">Enter face name, then pres Rec</string>
+    <string name="SStopTrain">Stop Training</string>
+    <string name="SStopSearch">Stop Search</string>
+    <string name="Straininig">Training...</string>
+    <string name="SCanntoPredic">More than one face is needed to predict</string>
+    <string name="SIdle">Idle</string>
+    <string name="SFaceName">Face name:</string>
+    <string name="SSearching">Searching</string>
+    <string name="SFrontCamera">Front Camera</string>
+    <string name="SBackCamera">Back Camera</string>
+    <string name="training">Training</string>
+    <string name="recognize">Recognize</string>
+    <string name="capture">Capture</string>
+    <string name="image_preview">image preview</string>
+    <string name="capturing">Capturing</string>
+    <string name="results">Recognized Faces</string>
+    <string name="scan">Scan</string>
+    <string name="scanning">Scanning</string>
+    <string name="next">Next</string>
+    <string name="please_enter_the_same_name_for_the_same_person_everytime_you_train_that_person">Please enter the same name for the same person everytime you train that person</string>
+    <string name="who_are_you_going_to_train">Who are you going to train?</string>
+    <string name="commit_attendance">Commit Attendance</string>
+    <string name="give_attendance">Give Attendance</string>
+    <string name="mark_attendance">Mark Attendance</string>
+
+
+</resources>

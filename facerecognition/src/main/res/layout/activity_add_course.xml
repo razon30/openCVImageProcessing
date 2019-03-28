@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+   >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp">
+
+
+            <!-- Email Label -->
+
+
+            <!--<TextView-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Course Code:"-->
+            <!--android:textColor="#ffffff"-->
+            <!--/>-->
+            <!--<EditText android:id="@+id/course_code"-->
+            <!--android:background="@drawable/edittextstyle"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:inputType="text"-->
+            <!--android:hint="IITXXX"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:ellipsize="start"-->
+            <!--android:gravity="center"-->
+            <!--android:textColorHint="#ffffff"/>-->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/course_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Course code: e.g.IITXXX"
+                    android:inputType="text"
+                    android:textColor="#ffffff"
+                    android:textColorHint="@color/grey" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/course_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Course Title"
+                    android:inputType="text"
+                    android:textColor="#ffffff"
+                    android:textColorHint="@color/grey" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Course Teacher:"-->
+            <!--android:textColor="#ffffff"-->
+            <!--/>-->
+
+            <!--<EditText android:id="@+id/course_teacher"-->
+
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="@drawable/edittextstyle"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:inputType="text"-->
+            <!--android:textColorHint="#ffffff"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:ellipsize="start"-->
+            <!--android:gravity="center"-->
+            <!--android:hint="xxxxxx"/>-->
+
+            <Spinner
+                android:id="@+id/teacherSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                />
+
+
+            <!--<android.support.design.widget.TextInputLayout-->
+
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_marginBottom="8dp">-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/course_teacher"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:hint="Course Teacher"-->
+                    <!--android:inputType="text"-->
+                    <!--android:textColor="#ffffff"-->
+                    <!--android:textColorHint="@color/grey" />-->
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Last Day of Course:"-->
+            <!--android:textColor="#ffffff"-->
+            <!--/>-->
+
+            <!--<EditText android:id="@+id/course_lastday"-->
+
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="@drawable/edittextstyle"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:inputType="text"-->
+            <!--android:textColorHint="#ffffff"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:ellipsize="start"-->
+            <!--android:gravity="center"-->
+            <!--android:hint="dd-MMM-yyyy"/>-->
+
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/course_lastday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="false"
+                    android:hint="Last day of the course: e.g. xx-xx-xxxx"
+                    android:inputType="text"
+                    android:textColor="#ffffff"
+                    android:textColorHint="@color/grey" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Room:"-->
+            <!--android:textColor="#ffffff"-->
+            <!--/>-->
+
+            <!--<EditText android:id="@+id/course_room"-->
+
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="@drawable/edittextstyle"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:inputType="text"-->
+            <!--android:textColorHint="#ffffff"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:ellipsize="start"-->
+            <!--android:gravity="center"-->
+            <!--android:hint="123"/>-->
+
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/course_room"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Room"
+                    android:inputType="text"
+                    android:textColor="#ffffff"
+                    android:textColorHint="@color/grey" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Friday Time:"-->
+            <!--android:textColor="#ffffff"-->
+            <!--/>-->
+
+            <!--<EditText android:id="@+id/course_friday"-->
+
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="@drawable/edittextstyle"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:inputType="text"-->
+            <!--android:textColorHint="#ffffff"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:ellipsize="start"-->
+            <!--android:gravity="center"-->
+            <!--android:hint="HH:mm:ss"/>-->
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/course_friday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="false"
+                    android:hint="Friday Time: HH:mm:ss"
+                    android:inputType="text"
+                    android:textColor="#ffffff"
+                    android:textColorHint="@color/grey" />
+            </android.support.design.widget.TextInputLayout>
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Saturday Time:"-->
+            <!--android:textColor="#ffffff"-->
+            <!--/>-->
+
+            <!--<EditText android:id="@+id/course_saturday"-->
+
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="@drawable/edittextstyle"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:inputType="text"-->
+            <!--android:textColorHint="#ffffff"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:ellipsize="start"-->
+            <!--android:gravity="center"-->
+            <!--android:hint="HH:mm:ss"/>-->
+
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/course_saturday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="false"
+                    android:hint="Saturday Time: HH:mm:ss"
+                    android:inputType="text"
+                    android:textColor="#ffffff"
+                    android:textColorHint="@color/grey" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Sunday Time:"-->
+            <!--android:textColor="#ffffff"-->
+            <!--/>-->
+
+            <!--<EditText android:id="@+id/course_sunday"-->
+
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="@drawable/edittextstyle"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:inputType="text"-->
+            <!--android:textColorHint="#ffffff"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:ellipsize="start"-->
+            <!--android:gravity="center"-->
+            <!--android:hint="HH:mm:ss"/>-->
+
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/course_sunday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="false"
+                    android:hint="Sunday Time: HH:mm:ss"
+                    android:inputType="text"
+                    android:textColor="#ffffff"
+                    android:textColorHint="@color/grey" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Monday Time:"-->
+            <!--android:textColor="#ffffff"-->
+            <!--/>-->
+
+            <!--<EditText android:id="@+id/course_monday"-->
+
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="@drawable/edittextstyle"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:inputType="text"-->
+            <!--android:textColorHint="#ffffff"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:ellipsize="start"-->
+            <!--android:gravity="center"-->
+            <!--android:hint="HH:mm:ss"/>-->
+
+
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/course_monday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="false"
+                    android:hint="Monday Time: HH:mm:ss"
+                    android:inputType="text"
+                    android:textColor="#ffffff"
+                    android:textColorHint="@color/grey" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Tuesday Time:"-->
+            <!--android:textColor="#ffffff"-->
+            <!--/>-->
+
+            <!--<EditText android:id="@+id/course_tuesday"-->
+
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="@drawable/edittextstyle"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:inputType="text"-->
+            <!--android:textColorHint="#ffffff"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:ellipsize="start"-->
+            <!--android:gravity="center"-->
+            <!--android:hint="HH:mm:ss"/>-->
+
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/course_tuesday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="false"
+                    android:hint="Tuesday Time: HH:mm:ss"
+                    android:inputType="text"
+                    android:textColor="#ffffff"
+                    android:textColorHint="@color/grey" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Wednesday Time:"-->
+            <!--android:textColor="#ffffff"-->
+            <!--/>-->
+
+            <!--<EditText android:id="@+id/course_wednesday"-->
+
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="@drawable/edittextstyle"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:inputType="text"-->
+            <!--android:textColorHint="#ffffff"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:ellipsize="start"-->
+            <!--android:gravity="center"-->
+            <!--android:hint="HH:mm:ss"/>-->
+
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/course_wednesday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="false"
+                    android:hint="Wednesday Time: HH:mm:ss"
+                    android:inputType="text"
+                    android:textColor="#ffffff"
+                    android:textColorHint="@color/grey" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Thursday Time:"-->
+            <!--android:textColor="#ffffff"-->
+            <!--/>-->
+
+            <!--<EditText android:id="@+id/course_thursday"-->
+
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="@drawable/edittextstyle"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:inputType="text"-->
+            <!--android:textColorHint="#ffffff"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:ellipsize="start"-->
+            <!--android:gravity="center"-->
+            <!--android:hint="HH:mm:ss"/>-->
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/course_thursday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="false"
+                    android:hint="Thursday Time: HH:mm:ss"
+                    android:inputType="text"
+                    android:textColor="#ffffff"
+                    android:textColorHint="@color/grey" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="24dp"
+                android:background="#3c98d1"
+                android:onClick="onSubmitCourse"
+                android:padding="12dp"
+                android:text="Add Course"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/link_signup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:text="If there is no class in a particular day, keep it blank."
+                android:textColor="#ffffff"
+                android:textSize="16dip" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
